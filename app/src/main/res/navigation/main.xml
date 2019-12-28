@@ -32,10 +32,21 @@
         android:name="com.example.navigationsandbox.ResultFragment"
         tools:layout="@layout/fragment_result">
         <action
-            android:id="@+id/action_to_first"
-            app:destination="@id/list"
+            android:id="@+id/action_to_finish"
+            app:destination="@id/finish"
             app:enterAnim="@anim/from_left"
             app:exitAnim="@anim/to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/finish"
+        android:name="com.example.navigationsandbox.FinishFragment"
+        tools:layout="@layout/fragment_finish">
+        <action
+            android:id="@+id/action_to_first"
+            app:destination="@id/list"
+            app:enterAnim="@anim/from_top"
+            app:exitAnim="@anim/to_bottom" />
     </fragment>
 
 </navigation>
