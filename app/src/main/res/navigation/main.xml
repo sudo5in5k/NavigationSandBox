@@ -11,7 +11,9 @@
         tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/action_to_content"
-            app:destination="@id/content" />
+            app:destination="@id/content"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
     </fragment>
 
     <fragment
@@ -20,7 +22,9 @@
         tools:layout="@layout/fragment_content">
         <action
             android:id="@+id/action_to_result"
-            app:destination="@id/result" />
+            app:destination="@id/result"
+            app:enterAnim="@anim/from_bottom"
+            app:exitAnim="@anim/to_top" />
     </fragment>
 
     <fragment
@@ -29,7 +33,9 @@
         tools:layout="@layout/fragment_result">
         <action
             android:id="@+id/action_to_first"
-            app:destination="@id/list" />
+            app:destination="@id/list"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
     </fragment>
 
 </navigation>
